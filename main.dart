@@ -81,6 +81,21 @@ void main() {
   //country & country value will have another map having capitalCity,
   //currency and language to it. by using any country key print all the value of Capital & Currency.
 
+  Map world = {
+    'pakistan': {
+      'capitalCity': 'Islamabad',
+      'currency': 'Rupee',
+      'language': 'Urdu',
+    },
+    'United State': {
+      'capitalCity': 'New york',
+      'currency': 'Dollar',
+      'language': 'English',
+    }
+  };
+
+  print(world['pakistan']);
+
   //Q.7: Check if "fri" exist in expanses; if exist change it's value to 5000.0 otherwise
   //add 'fri' to expenses and set its value to 5000.0 then print expenses.
 
@@ -132,8 +147,14 @@ void main() {
 
   print(str.toSet());
 
-  //Q 11: Write a Dart code that takes in a list and an integer n as parameters.
-  // The function should return a new list containing the first n elements from the original list.
+  // Q 11: Write a Dart code that takes in a list and an integer n as parameters. The program should print a new list
+  // containing the first n elements from the original list.
+
+  List<int> intList = [10, 9, 8, 7, 6, 5, 4];
+
+  List<int> n = intList.sublist(0, 4);
+
+  print('copyList from Original list $n');
 
   //Q.12: Write a Dart code that takes in a list of strings and returns a new list with the elements in reverse
   // order. The original list should remain unchanged.
